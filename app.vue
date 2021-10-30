@@ -1,6 +1,9 @@
 <template>
   <div>
-    <!-- Remove this component to get started! -->
-    <NuxtWelcome />
+    <NuxtPage />
   </div>
 </template>
+
+<script setup>
+import '~/assets/css/tailwind.css';
+</script>
