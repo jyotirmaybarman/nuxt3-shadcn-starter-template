@@ -3,8 +3,7 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
-    "update-deps": "npm i @tailwindcss/typography@latest autoprefixer@latest nuxt3@latest postcss@latest tailwindcss@latest @pinia/nuxt@latest"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
