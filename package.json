@@ -3,17 +3,17 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "update-deps": "npm i @tailwindcss/typography@latest autoprefixer@latest nuxt3@latest postcss@latest tailwindcss@latest @pinia/nuxt@latest"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^4.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.0",
-    "nuxt3": "latest",
-    "postcss": "^8.3.11",
+    "nuxt3": "^3.0.0-27307420.6a25d3e",
+    "postcss": "^8.4.4",
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.1.0"
+    "@pinia/nuxt": "^0.1.6"
   }
 }
