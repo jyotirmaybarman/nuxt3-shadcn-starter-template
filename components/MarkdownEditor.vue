@@ -17,9 +17,6 @@ let md = ref("");
 let rendered = ref("");
 const editing = ref(true);
 
-
-console.log(rendered);
-
 function renderHtml(){
     editing.value = false;
     rendered.value = useNuxtApp().$mdit.render(md.value); 
