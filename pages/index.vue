@@ -9,11 +9,17 @@
             </svg>
         </button>
         <h1 class="mt-2">Hello world</h1>
+        <div class="w-[50%] mt-8">
+            <h1 class="text-xl mb-4">Markdown Support</h1>
+            <MarkdownEditor></MarkdownEditor>
+        </div>
+
     </div>
 </template>
 
 <script setup>
 import { useThemeStore } from '~/store/useThemeStore'
+import MarkdownEditor from '~~/components/MarkdownEditor.vue';
 
 const themeStore = useThemeStore();
 
