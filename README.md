@@ -1,29 +1,7 @@
-# Nuxt 3 Minimal Starter
-
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
-
-## Setup
-
-Make sure to install the dependencies
-
-```bash
-yarn install
-```
-
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-yarn build
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+# Nuxt 3, Tailwind 3 & Pinia Minimal Starter With markdown-it support
+# Installed Packages -
+  1. Nuxt - 3
+  2. Tailwind Css - 3
+  3. Markdown-it
+  4. Pinia
+  5. Some markdown-it extensions
