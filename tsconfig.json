@@ -1,4 +1,3 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
-  "allowJs": true
+  "extends": "./.nuxt/tsconfig.json"
 }
