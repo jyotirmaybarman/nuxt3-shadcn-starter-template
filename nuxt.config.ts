@@ -14,4 +14,7 @@ export default defineNuxtConfig({
     buildModules: [
         ['@pinia/nuxt', { disableVuex: true }]
     ],
+    css:[
+        '@/assets/css/tailwind.css'
+    ]
 })
