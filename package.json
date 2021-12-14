@@ -6,11 +6,11 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.4.1",
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
     "nuxt3": "^3.0.0-27307420.6a25d3e",
-    "postcss": "^8.4.4",
-    "tailwindcss": "^2.2.19"
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.2"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.6"
