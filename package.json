@@ -7,15 +7,15 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",
-    "autoprefixer": "^10.4.0",
-    "nuxt3": "^3.0.0-27307420.6a25d3e",
+    "autoprefixer": "^10.4.2",
+    "nuxt3": "^3.0.0-27374259.21b664c",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.2"
+    "tailwindcss": "^3.0.15"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.1.6",
-    "highlight.js": "^11.3.1",
-    "markdown-it": "^12.3.0",
+    "@pinia/nuxt": "^0.1.8",
+    "highlight.js": "^11.4.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-container": "^3.0.0",
     "markdown-it-deflist": "^2.1.0",
     "markdown-it-emoji": "^2.0.0",
