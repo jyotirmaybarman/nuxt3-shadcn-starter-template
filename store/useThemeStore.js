@@ -12,6 +12,10 @@ export const useThemeStore = defineStore({
   },
 
   actions: {
+    initThemeStore(){
+      this.theme = document.cookie.search('light') ? 'light':'dark';
+      document.body.classList.add(this.theme);
+    },
     toggleTheme(){
       if(this.theme == "dark"){
         document.body.classList.remove(this.theme);
@@ -20,11 +24,9 @@ export const useThemeStore = defineStore({
         document.body.classList.remove(this.theme);
         this.theme = 'dark';
       }
+      document.cookie = `vueuse-color-scheme=${this.theme}`
       document.body.classList.add(this.theme);
     }
   },
 });
 
-if(process.client){
-  document.body.classList.add(useThemeStore().$state.theme);
-}
