@@ -6,15 +6,15 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.0",
-    "autoprefixer": "^10.4.2",
-    "nuxt3": "^3.0.0-27374259.21b664c",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.15"
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.4",
+    "nuxt3": "^3.0.0-27497374.59593a0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.8",
-    "highlight.js": "^11.4.0",
+    "highlight.js": "^11.5.1",
     "markdown-it": "^12.3.2",
     "markdown-it-container": "^3.0.0",
     "markdown-it-deflist": "^2.1.0",
