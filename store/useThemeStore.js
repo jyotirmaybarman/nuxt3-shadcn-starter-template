@@ -8,13 +8,17 @@ export const useThemeStore = defineStore({
   }),
 
   getters: {
-    getTheme:(state) => state.theme
+    getTheme(){
+      return this.theme;
+    }
   },
 
   actions: {
     initThemeStore(){
-      this.theme = document.cookie.search('light') ? 'light':'dark';
+      const mytheme = localStorage.getItem('mytheme');
+      this.theme = mytheme ? mytheme :'dark';
       document.body.classList.add(this.theme);
+      localStorage.setItem('mytheme',this.theme);
     },
     toggleTheme(){
       if(this.theme == "dark"){
@@ -24,7 +28,7 @@ export const useThemeStore = defineStore({
         document.body.classList.remove(this.theme);
         this.theme = 'dark';
       }
-      document.cookie = `vueuse-color-scheme=${this.theme}`
+      localStorage.setItem('mytheme',this.theme);
       document.body.classList.add(this.theme);
     }
   },
