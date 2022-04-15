@@ -1,5 +1,5 @@
 <template>
-    <div class="index flex flex-col h-screen w-screen justify-center items-center bg-white text-black dark:bg-black dark:text-white">
+    <div class="index flex flex-col justify-center items-center">
         <client-only>
             <button class="flex px-2 py-1 rounded-md" @click="toggleTheme">
                 <svg  class="h-8 w-8 mr-2 p-1" :class="theme == 'light' ? 'active':''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -11,7 +11,7 @@
             </button>
         </client-only>
         <h1 class="mt-2">Hello world</h1>
-        <div class="w-[50%] mt-8">
+        <div class="w-[50%] my-8">
             <h1 class="text-xl mb-4">Markdown Support</h1>
             <MarkdownEditor></MarkdownEditor>
         </div>
