@@ -6,7 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.2",
+    "@tailwindcss/typography": "0.5.7",
     "autoprefixer": "^10.4.4",
     "nuxt3": "^3.0.0-27497374.59593a0",
     "postcss": "^8.4.12",
