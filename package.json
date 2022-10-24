@@ -15,7 +15,7 @@
     "tailwindcss": "3.2.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "0.4.2",
+    "@pinia/nuxt": "0.4.3",
     "highlight.js": "11.6.0",
     "markdown-it": "13.0.1",
     "markdown-it-container": "3.0.0",
