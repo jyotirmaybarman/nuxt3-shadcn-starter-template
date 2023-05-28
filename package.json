@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "0.4.3",
-    "highlight.js": "11.6.0",
+    "highlight.js": "11.8.0",
     "markdown-it": "13.0.1",
     "markdown-it-container": "3.0.0",
     "markdown-it-deflist": "2.1.0",
