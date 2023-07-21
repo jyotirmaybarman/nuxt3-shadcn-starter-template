@@ -1,22 +1,27 @@
 {
+  "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "start": "node .output/server/index.mjs"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "0.5.8",
-    "autoprefixer": "10.4.13",
-    "nuxt": "3.0.0-rc.12",
-    "postcss": "8.4.19",
-    "tailwindcss": "3.2.4"
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^20.4.2",
+    "nuxt": "^3.6.5"
+  },
+  "overrides": {
+    "vue": "latest"
   },
   "dependencies": {
-    "@pinia/nuxt": "0.4.3",
-    "highlight.js": "11.6.0",
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.1.4",
+    "highlight.js": "11.8.0",
     "markdown-it": "13.0.1",
     "markdown-it-container": "3.0.0",
     "markdown-it-deflist": "2.1.0",

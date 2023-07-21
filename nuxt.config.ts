@@ -1,20 +1,8 @@
-import { defineNuxtConfig } from 'nuxt'
-
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    build: {
-        postcss: {
-            postcssOptions: {
-                plugins: {
-                    tailwindcss: {},
-                    autoprefixer: {},
-                }
-            }
-        },
-    },
-    buildModules: [
-        ['@pinia/nuxt', { disableVuex: true }]
-    ],
-    css:[
-        '@/assets/css/tailwind.css'
-    ]
+  devtools: { enabled: true },
+  modules: [
+    '@pinia/nuxt',
+    '@nuxtjs/tailwindcss',
+  ],
 })
