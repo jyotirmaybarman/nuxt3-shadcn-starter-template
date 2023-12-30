@@ -10,25 +10,25 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "^20.4.2",
-    "nuxt": "^3.6.5"
+    "@nuxtjs/tailwindcss": "^6.10.3",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.10.6",
+    "nuxt": "^3.9.0"
   },
   "overrides": {
     "vue": "latest"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
-    "pinia": "^2.1.4",
-    "highlight.js": "11.8.0",
-    "markdown-it": "13.0.1",
-    "markdown-it-container": "3.0.0",
-    "markdown-it-deflist": "2.1.0",
-    "markdown-it-emoji": "2.0.2",
-    "markdown-it-footnote": "3.0.3",
-    "markdown-it-ins": "3.0.1",
-    "markdown-it-sub": "1.0.0",
-    "markdown-it-sup": "1.0.0"
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7",
+    "highlight.js": "11.9.0",
+    "markdown-it": "14.0.0",
+    "markdown-it-container": "4.0.0",
+    "markdown-it-deflist": "3.0.0",
+    "markdown-it-emoji": "3.0.0",
+    "markdown-it-footnote": "4.0.0",
+    "markdown-it-ins": "4.0.0",
+    "markdown-it-sub": "2.0.0",
+    "markdown-it-sup": "2.0.0"
   }
 }

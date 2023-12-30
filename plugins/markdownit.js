@@ -7,7 +7,7 @@ import mdit from 'markdown-it';
 import sub from 'markdown-it-sub';
 import sup from 'markdown-it-sup';
 import fn from 'markdown-it-footnote';
-import emo from 'markdown-it-emoji';
+import { full as emo } from 'markdown-it-emoji'
 import def from 'markdown-it-deflist';
 import ins from 'markdown-it-ins';
 import container from 'markdown-it-container';
