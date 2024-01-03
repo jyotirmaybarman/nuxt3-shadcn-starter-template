@@ -1,7 +1,7 @@
 <template>
-    <div class="default-layout h-screen container mx-auto flex flex-col">
+    <div class="default-layout min-h-screen container mx-auto flex flex-col">
         <the-navbar />
-        <div class="main-content flex-auto border dark:border-gray-800">
+        <div class="flex-auto">
             <slot />
         </div>
         <the-footer />

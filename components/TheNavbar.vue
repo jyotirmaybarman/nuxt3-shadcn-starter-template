@@ -1,5 +1,5 @@
 <template>
-    <nav class="border dark:border-gray-800 h-12 flex justify-center items-center">
+    <nav class="text-center py-4 border dark:border-gray-500">
         The Navbar
     </nav>
 </template>

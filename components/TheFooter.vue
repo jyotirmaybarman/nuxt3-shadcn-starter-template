@@ -1,5 +1,5 @@
 <template>
-    <footer class="border dark:border-gray-800 h-12 flex justify-center items-center">
+    <footer class="border py-4 text-center dark:border-gray-500">
         The Footer
     </footer>
 </template>
