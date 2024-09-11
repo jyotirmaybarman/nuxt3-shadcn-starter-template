@@ -12,16 +12,18 @@
         </p>
         
 
-        <HoverCard>
-            <HoverCardTrigger>
-                <Button class="mt-4 rounded-full h-8 w-8 p-0">
-                    <InfoCircledIcon class="rounded-full h-8 w-8"></InfoCircledIcon>
-                </Button>
-            </HoverCardTrigger>
-            <HoverCardContent class="text-center">
-                This is a combination of shadcn-vue's <strong>HoverCard</strong> & <strong>Button</strong> components.
-            </HoverCardContent>
-        </HoverCard>
+        <ClientOnly>
+            <HoverCard>
+                <HoverCardTrigger>
+                    <Button class="mt-4 rounded-full h-8 w-8 p-0">
+                        <InfoCircledIcon class="rounded-full h-8 w-8"></InfoCircledIcon>
+                    </Button>
+                </HoverCardTrigger>
+                <HoverCardContent class="text-center">
+                    This is a combination of shadcn-vue's <strong>HoverCard</strong> & <strong>Button</strong> components.
+                </HoverCardContent>
+            </HoverCard>
+        </ClientOnly>
 
     </div>
 </template>
