@@ -1,38 +1,38 @@
 <template>
-    <div class="index h-full flex flex-col justify-center items-center">
-        <client-only>
-            <button class="flex mt-4 px-2 py-1 rounded-md" @click="toggleTheme">
-                <svg v-if="theme == 'dark'"  class="h-8 w-8 mr-2 p-1" :class="theme == 'light' ? 'active':''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                <svg v-else class="h-8 w-8 p-1" :class="theme == 'dark' ? 'active':''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                </svg>
-            </button>
-        </client-only>
-        <h1 class="mt-2">Hello world</h1>
-        <div class="w-[90%] lg:w-full my-8">
-            <h1 class="text-xl mb-4">Markdown Support</h1>
-            <MarkdownEditor></MarkdownEditor>
-        </div>
+    <div class="index h-[calc(100vh-8.3rem)] flex flex-col justify-center items-center border dark:border-gray-500">
+        <h1 class="mt-2">Installed items: </h1>
+        <p class="mt-2">
+            <strong>Nuxt 3</strong>, 
+            <strong>Pinia</strong>,
+            <strong>Tailwind CSS</strong>, 
+            <strong>VueUse</strong>, 
+            <strong>NuxtImage</strong>,
+            <strong>shadcn-vue</strong>,
+            <strong>@radix-icons/vue</strong>
+        </p>
+        
+
+        <HoverCard>
+            <HoverCardTrigger>
+                <Button class="mt-4 rounded-full h-8 w-8 p-0">
+                    <InfoCircledIcon class="rounded-full h-8 w-8"></InfoCircledIcon>
+                </Button>
+            </HoverCardTrigger>
+            <HoverCardContent class="text-center">
+                This is a combination of shadcn-vue's <strong>HoverCard</strong> & <strong>Button</strong> components.
+            </HoverCardContent>
+        </HoverCard>
 
     </div>
 </template>
 
 <script setup>
-import { useThemeStore } from '~/store/useThemeStore'
-import MarkdownEditor from '~~/components/MarkdownEditor.vue';
-
-const themeStore = useThemeStore();
-if(process.client){
-    themeStore.initThemeStore();
-}
-
-let theme = computed(() => themeStore.getTheme)
-
-function toggleTheme(){
-    themeStore.toggleTheme();
-}
+import { InfoCircledIcon } from '@radix-icons/vue';
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card';
 
 </script>
 
